@@ -15,8 +15,8 @@ if 1==m: # si el usuario eligio el 1 pues se realiza el proceso de 1.000.000.000
                 if x%y == 0: #si x e y se genera un resultado igual a 0, no esta cumpliendo las reglas de los primos 
 
                     val=False #entonces no se va validar el numero 
-
-                break
+                    break
+                    
             if val: #como se determino el funcionamiento de val agrgara aquellos verdaderos y lo que no pues no se agregan 
 
                 losprimos.append(x)  #aqui se empiesa agregar los valores   
@@ -34,7 +34,7 @@ elif 2==m: # en esta caso no se eligio el 1 pues el 2 y se realiza el procedimie
                 for y in range(2,x): 
                     if x%y == 0: 
                        val=False
-                    break
+                       break
                 if val: 
                     losprimos.append(x)    
             return losprimos     
